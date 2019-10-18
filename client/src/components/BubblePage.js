@@ -19,7 +19,6 @@ const BubblePage = () => {
       setColorList(data);
     });
   }, []);
-  // set that data to the colorList state property
 
   return (
     <>
