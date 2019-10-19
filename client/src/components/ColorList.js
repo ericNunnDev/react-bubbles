@@ -30,7 +30,7 @@ const ColorList = ({ colors, updateColors }) => {
     axios
       .delete(`http://localhost:5000/api/colors`)
       .then(res => {
-
+        updateColors({colors: res.data})
       })
       .catch(err => {
         console.log(err);
